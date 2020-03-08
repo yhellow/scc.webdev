@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>로그인페이지</title>
+        <style>
+            body{font-family: 'East Sea Dokdo', cursive;}
+          .header {
+            color: white;
+            text-align: center;
+            background-image: url('http://www.forest.go.kr/newkfsweb/cmm/fms/FileDown.do?atchFileId=FILE_000000010008639&fileSn=0');
+            background-size: cover;
+            background-position: center;
+            width: 600px;
+            height: 300px;
+            border-radius: 10px;
+
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+          }
+          .header h1, .header p{
+              color:white;
+          }
+          #button{
+              width:180px;
+              height:40px;
+              background:#FCFCFC;
+              color: #000000;
+              font-size: 16px;
+              border: 1px solid #dddddd;
+              border-radius:4px;
+              cursor:pointer
+          }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+          <h1>로그인 페이지</h1>
+          <p>아이디, 비밀번호를 입력해주세요</p>
+        </div>
+        <div class="contents">
+            <p>
+                ID: 
+                <input type="text">
+              </p>
+              <p>
+                PW: 
+                <input type="password">   
+              </p>
+        </div>
+        
+        <button id="button" class="mybtn">로그인하기</button>
+    </body>
+    </html>
