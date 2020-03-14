@@ -1,0 +1,17 @@
+.header{
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    background-repeat: no-repeat;
+   background-position: center;
+    background-image: url("http://www.forest.go.kr/newkfsweb/cmm/fms/FileDown.do?atchFileId=FILE_000000010008639&fileSn=0");
+}
+.header h1, .header p {
+    color:white
+    color:rgba(red, green, blue, alpha)
+    text-align:center;
+.contents{
+   margin-top:20;
+   margin-botton:10px; 
+}
+}

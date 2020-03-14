@@ -1,0 +1,41 @@
+#container {
+    width: 600px;
+    margin: auto;
+}
+
+.productimg {
+    width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.heading,
+h1 {
+    font-size: 1em;
+}
+
+.fillout {
+    margin: 30px auto;
+}
+
+.form-control {
+    font-size: smaller;
+}
+
+span {
+    font-size: smaller;
+}
+
+.btn {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+#inputnum {
+    width: 100px;
+}

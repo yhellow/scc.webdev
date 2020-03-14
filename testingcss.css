@@ -1,0 +1,49 @@
+        .imagepart {
+            color: white;
+            background-size: cover;
+            background-position: center;
+            background-image: url(http://www.forest.go.kr/newkfsweb/cmm/fms/FileDown.do?atchFileId=FILE_000000010008639&fileSn=0);
+            border-radius: 10px;
+            width: 600px;
+            height: 300px;
+            text-align: center;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            color: black;
+            width: 600px;
+            height: 100px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: auto;
+        }
+
+        .btnsec {
+            width:600px;
+            
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin:auto;
+        }
+
+        .btn {
+            background-color: white;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            margin: auto;
+            border: 1px solid;
+            cursor: pointer;
+        }
