@@ -13,7 +13,7 @@
 
 .heading,
 h1 {
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 .fillout {
@@ -39,4 +39,13 @@ span {
 
 #inputnum {
     width: 100px;
+}
+
+/* 뒤에 두 부분 추가하여 폰트사이즈 입히기 */
+li {
+    font-size: 12px;
+}
+
+li > span {
+    font-size: 12px;
 }
