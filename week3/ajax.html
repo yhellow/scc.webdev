@@ -1,0 +1,28 @@
+$.ajax({
+    type:'GET',
+    <!-- 데이터를 넣을 떄는 반드시 ? 로 시작 / 데이터 사이에는 & 를 넣어준다-->
+    url:'naver.com?id=1234&pwd=kdafk&name=zoozoo',
+    data:{},
+    success: function(response){
+
+    },
+    error: function(error){
+
+    }
+})
+
+$.ajax({
+    type:'POST',
+    url: '...',
+    <!-- ajax는 데이터가 바디  -->
+    data:{
+        id:'1234'
+        pwd:'dfaf'
+    },
+    success: function(response){
+
+    },
+    error: funciton(error){
+
+    }
+})
