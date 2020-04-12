@@ -1,0 +1,59 @@
+/* header css */
+.blog-header-logo{
+    font-size: xx-large;
+}
+.valvesteam{
+    font-size: smaller;
+}
+.searchtext{
+    font-size: smaller;
+}
+.steamyexplain{
+    font-size: small;
+}
+
+/* jumbotron css */
+.jumbotext{
+    font-size: smaller;
+}
+.leadgamepage{
+    font-size: smaller;
+}
+.leadrating{
+    font-size: smaller;
+}
+.leadprice{
+    font-size: smaller;
+}
+.leadtags{
+    font-size: smaller;
+}
+.leadsummary{
+    font-size: smaller;
+}
+.jumbocarousel{
+    margin-left: 4em;
+}
+
+/* random suggestion css */
+.bots{
+    /* width: 100%; */
+    display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+    margin-top:1em;
+}
+.botone{
+    width: 50%;
+}
+.bottwo{
+    width: 50%;
+}
+.leadrandom{
+    font-size: smaller;
+}
+.leadpersonal{
+    font-size: smaller;
+}
