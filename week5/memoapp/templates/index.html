@@ -22,80 +22,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script type='text/javascript' lang='javascript' src='../static/index.js'></script>
 
   <!-- 구글폰트 -->
   <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
-
-  <script>
-    function openclose() {
-      if ($('#posting-box').css('display') == 'block') {
-        $('#posting-box').hide();
-        $('#btn-posting-box').text('포스팅 박스 열기')
-      } else {
-        $('#posting-box').show();
-        $('#btn-posting-box').text('포스팅 박스 닫기')
-      }
-    }
-
-    $(document).ready(function () {
-      $('#cards-box').html('');
-      listing();
-    });
-
-    function listing() {
-      $.ajax({
-        type: "GET",
-        url: "/memo",
-        data: {},
-        success: function (response) {
-          let items = response;
-          for (let i = 0; i < items.length; i++) {
-            let title = items[i]["title"];
-            let description = items[i]["description"];
-            let image = items[i]["image"];
-            let url = items[i]["url"];
-            let comment = items[i]["comment"];
-
-            make_card(comment, description, image, title, url);
-          }
-        }
-      })
-    }
-
-    function make_card(comment, desc, image, title, url) {
-      let html = `
-        <div class="card">
-          <img class="card-img-top"
-            src="${image}"
-            alt="Card image cap">
-          <div class="card-body">
-            <a href="${url}" class="card-title">${title}</a>
-            <p class="card-text">${desc}</p>
-            <p class="card-text comment">${comment}</p>
-          </div>
-        </div>
-      `;
-
-      $('#cards-box').append(html);
-    }
-
-    function posting() {
-      let url = $('#posting-url').val();
-      let comment = $('#posting-comment').val();
-
-      $.ajax({
-        type: "POST",
-        url: "/memo",
-        data: {
-          url: url,
-          comment: comment,
-        },
-        success: function (response) { // 성공하면
-          window.location.reload();
-        }
-      })
-    }
-  </script>
 
   <!-- style -->
   <style type="text/css">

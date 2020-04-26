@@ -34,6 +34,13 @@
 .jumbocarousel{
     margin-left: 4em;
 }
+/* ? */
+.title{
+    font-size: smaller;
+}
+.gamereview{
+    font-size: smaller;
+}
 
 /* random suggestion css */
 .bots{
