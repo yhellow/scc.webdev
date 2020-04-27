@@ -7,6 +7,7 @@ datajson = dataName.json()
 
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(dataName.text, 'html.parser')
+import random
 
 from pymongo import MongoClient
 client = MongoClient('localhost', 27017)
