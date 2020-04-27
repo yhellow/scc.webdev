@@ -82,7 +82,8 @@ def trendingshow():
 @app.route('/random', methods= ["GET"])
 def randompick():
     gameslist = list(db.games.find({}, {'_id':0})) 
-    randomgame = random.choice(gameslist)
+    randomgame = random.sample(gameslist)
+    # randomgameurl = randomgame[""]
 
     return jsonify ({'result':'success', 'randomgame': randomgame})
 

@@ -13,6 +13,7 @@ def home():
     return render_template('index.html')
 
 # API 역할을 하는 부분
+# _id 값을 뺀 전체 리스트를 좋아요 수가 낮아지는 순서로 추출하여 'GET' 요청 값으로 돌려줌
 @app.route('/api/list', methods=['GET'])
 def stars_list():
     # 1. mystar 목록 전체를 검색합니다. ID는 제외하고 like 가 많은 순으로 정렬합니다.
