@@ -1,14 +1,14 @@
 $(document).ready(function(){
-    saving();
+    somefuncName();
 })
 
-function saving(){
+function somefuncName(){
     $.ajax({
         type: 'GET',
         url: '/apiName',
         data: {},
         success: function(response){
-            if(response['resutl']== 'success'){
+            if(response['result']= 'success'){
                 alert(response['result'])
             }
         }

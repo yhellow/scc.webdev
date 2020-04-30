@@ -2,22 +2,27 @@ import requests
 from bs4 import BeautifulSoup
 import random
 from pymongo import MongoClient
-client = MongoClient('localhost', 27117)
-db = client.dbName
+
 from flask import Flask, render_template, jsonify, request
 app = Flask(__name__)
 
 
-# @app.route('/', methods= ['POST'/'GET'])
-def home():
-    return render_template('any.js')    
+url = ''
+headers = {User-Agent, ..}
+r = requests.get(url, headers= headers)
+rjson = r.json()
+soup = BeautifulSoup(r.text, 'html.parser')
 
-@app.route('/apiName')
-def saving:
-    render_template('any.js')
+client = MongoClient('localhost', 27017)
+db = client.dbName
 
+@app.route('/', methods=['GET'])
+def home:
+    return render_template('index.html')
+
+@app.route('/apiName', methods= ['POST'])
+def apiroute:
 
 
 if __name__ = '__main__':
     app.run('0.0.0.0', port= 5000, debug= True)
-
