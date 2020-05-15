@@ -7,7 +7,9 @@ datajson = dataName.json()
 
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(dataName.text, 'html.parser')
+
 import random
+from imp import reload
 
 from pymongo import MongoClient
 client = MongoClient('localhost', 27017)
@@ -17,4 +19,4 @@ from flask import Flask, render_template
 app = Flask(__name__)
 # flask codes
 if __name__ == '__main__':
-    app.run('0.0.0.0', port= 5000, deug= True)
+    app.run('0.0.0.0', port= 5000, debug= True)
